@@ -15,7 +15,8 @@ připojím TABLE(output) a uvidím, jak ho klasifikoval i s jakou jistotout (pra
 
 ### Kosatce s expertem
 DERIVE(field ops) - vytvorim sepal area a petal area (naklikám v pravo (width * length))\
-FILTER (field ops) - odstraníme nepotřebné proměné, nebo můžu v typu zrušit význam
+FILTER (field ops) - odstraníme nepotřebné proměné, nebo můžu v typu zrušit význam\
+MATRIX (output) - řádek skutečnost sloupeček klasifikace, co si nejčastější plete
 ### Poznámky
 DATA AUDIT |(output) se používá pro více grafů\
 FEATURE SELECTION (models - supervised) - vyhodnocuje důležitost velké sady prediktorů\
