@@ -3,8 +3,8 @@
 Tučně jsou názvy bloků
 ## Postup
 ### Import
-- Import (source) - VAR FILE \
-- TYPE (field ops) - nastavím target jako drug\
+- Import (source) - VAR FILE 
+- TYPE (field ops) - nastavím target jako drug
 
 ### Porozumění datům
  - DATA AUDIT(output )(jestli je vyvážené muž/žena, jaké je věkové rozložení...) 
