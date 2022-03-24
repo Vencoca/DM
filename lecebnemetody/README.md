@@ -1,6 +1,6 @@
 
 # Lecebne metody
-Tučně jsou názvy bloků
+Velkými písmeny jsou názvy bloků
 ## Postup
 ### Import
 - Import (source) - VAR FILE 
@@ -11,6 +11,7 @@ Tučně jsou názvy bloků
  - PLOT(graph) závislosti sodíku(x) a draslíku(y) na léku(color)
  - WEB (graph) - vztah mezi krevním tlakem a lékem, vyhodím pacienty s lékem Y pomocí bloku SELECT(record ops) 
     - s vysokým tlakem A/B, s nízkým X/C a s normálním tlakem X
+    - ![select](select.jpg) 
  - Vytvoříme novou proměnou - poměr sodíku a draslíku DERIVE(field ops) a nezapomeneme na TYPE
     - Zobrazíme HISTOGRAMem a zjistíme že pro poměr větší než 15 je vhodný lék Y
     - můžeme zahodit sloupce Na K FILTRem(field ops) (můžu ho použít pro přejmenování proměné)

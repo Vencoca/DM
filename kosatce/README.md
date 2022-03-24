@@ -1,6 +1,6 @@
 
 ## Kosatce
-Tučně jsou názvy bloků
+Velkými písmeny jsou názvy bloků
 ### Postup
 Import (source) - STATISTIC FILE (read labels as data, zakliknu usefield format info)\
 TYPE (field ops) - nastavím target jako spiecices\
