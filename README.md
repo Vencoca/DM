@@ -11,6 +11,13 @@
 - unsupervised - bez učitele
   - shlukování
 
+- Asociační pravidlo (generuje je algoritmus apriori)
+  - Závěr(consequent)  <- Předpoklady (antecedent)
+  - X <- A and B and C
+
+
+- Přejmenování proměných FILTER (field ops)
+
 ### Kontrolní Otázky
 1.  Co je datamining?
   1.  Datamining je proces objevování významných netriviální závislostí vzorů a trendů prozkoumáváním velkých objemů dat pomocí algoritmů pro odhalování pravidel a pomcí matematickáchc a statistických algoritmů
