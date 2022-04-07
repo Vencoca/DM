@@ -19,10 +19,17 @@
 3. Aktivujeme virtuální prostředí pomocí "env\Scripts\activate"
 4. pip install jupyter
 5. jupyter-notebook
-
+                                                                                               
 ## Příprava dat
 1. Vytvoříme si skript PrepareData.ipynb
 2. Pro práci s soubory s příponou budeme potřebovat balík Pyreadstat
    1. Nainstalujeme pomocí příkazu "pip install pyreadstat"
 3. Pro apriori - https://www.youtube.com/watch?v=0yaYwDyBxFA
    1. pip install mlxtend
+
+
+
+## Na školním počítači 
+- vytvoř složku v domácím adresáři C:\Users\jmeno.prijmeni\Semestral
+- příkazem "python -m venv env" vytvoř virtuální prostředí
+- Aktivuj pomocí C:\Users\jmeno.prijmeni\Semestral\env\Scripts\activate.bat
