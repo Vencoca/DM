@@ -16,7 +16,7 @@
 ### Krok 2 - Virtuální prostředí
 1. Pomocí pipu nainstaluje virtuální prostředí "pip install virtualenv"
 2. Pomocí příkazu "virtualenv env" vytvoříme virtuální prostředí
-3. Aktivujeme virtuální prostředí pomocí "env\Scripts\activate"
+3. Aktivujeme virtuální prostředí pomocí "env\Scripts\activate" (vypnutí pomocí deactivate)
 4. pip install jupyter
 5. jupyter-notebook
                                                                                                
@@ -33,3 +33,4 @@
 - vytvoř složku v domácím adresáři C:\Users\jmeno.prijmeni\Semestral
 - příkazem "python -m venv env" vytvoř virtuální prostředí
 - Aktivuj pomocí C:\Users\jmeno.prijmeni\Semestral\env\Scripts\activate.bat
+- vypnutí pomocí deactivate

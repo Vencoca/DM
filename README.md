@@ -18,6 +18,17 @@
 
 - Přejmenování proměných FILTER (field ops)
 
+### Statistika
+|   |   |
+|---|---|
+| True Positive | False Negative |
+| False Positive | True Negative |
+
+- SENZITIVITA (HIT RATE) = TP/P = TP/(TP + FN)
+- SPECIFIČNOST (SELEKTIVITA) = TN/N = TN/(FP + TN)
+- ROC křivka - 
+  - ![ROC](roc.jpg)
+
 ### Kontrolní Otázky
 1.  Co je datamining?
   1.  Datamining je proces objevování významných netriviální závislostí vzorů a trendů prozkoumáváním velkých objemů dat pomocí algoritmů pro odhalování pravidel a pomcí matematickáchc a statistických algoritmů
