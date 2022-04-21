@@ -4,6 +4,7 @@
 - prediktor = vstupní proměná = nezávislá proměná
 - target variable = cílová proměná = závislá proměná
 - vyvážená datová sada - má stejný počet u každého vzorku (každý druh kosatce měl 50 záznamů)
+- dichotomická proměná - proměná TRUE/FALSE
 ### Rozdělení algoritmů
 - supervised algoritmy - s učitelem
   - vždycky musím znát cílovou proměnou (target)

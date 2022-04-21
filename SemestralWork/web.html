@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 500px;
+            height: 500px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#4f340b", "id": "ALCOHOL", "label": "ALCOHOL", "shape": "dot", "size": 10.0}, {"color": "#93694c", "id": "BAKERY", "label": "BAKERY", "shape": "dot", "size": 10.0}, {"color": "#07134f", "id": "FROZEN", "label": "FROZEN", "shape": "dot", "size": 10.0}, {"color": "#8d73c4", "id": "MEAT", "label": "MEAT", "shape": "dot", "size": 10.0}, {"color": "#8807bf", "id": "MILK", "label": "MILK", "shape": "dot", "size": 10.0}, {"color": "#30253d", "id": "READMADE", "label": "READMADE", "shape": "dot", "size": 10.0}, {"color": "#638e83", "id": "SNACKS", "label": "SNACKS", "shape": "dot", "size": 10.0}, {"color": "#470be0", "id": "TINNED", "label": "TINNED", "shape": "dot", "size": 10.0}, {"color": "#12231f", "id": "TOILETRY", "label": "TOILETRY", "shape": "dot", "size": 10.0}, {"color": "#706d6e", "id": "VEG", "label": "VEG", "shape": "dot", "size": 10.0}]);
+        edges = new vis.DataSet([{"from": "ALCOHOL", "length": 500, "to": "BAKERY", "value": 169}, {"from": "ALCOHOL", "length": 500, "to": "MEAT", "value": 16}, {"from": "ALCOHOL", "length": 500, "to": "MILK", "value": 90}, {"from": "ALCOHOL", "length": 500, "to": "SNACKS", "value": 172}, {"from": "ALCOHOL", "length": 500, "to": "TINNED", "value": 136}, {"from": "ALCOHOL", "length": 500, "to": "TOILETRY", "value": 47}, {"from": "ALCOHOL", "length": 500, "to": "VEG", "value": 36}, {"from": "BAKERY", "length": 500, "to": "MEAT", "value": 15}, {"from": "BAKERY", "length": 500, "to": "SNACKS", "value": 183}, {"from": "BAKERY", "length": 500, "to": "TINNED", "value": 179}, {"from": "BAKERY", "length": 500, "to": "TOILETRY", "value": 56}, {"from": "FROZEN", "length": 500, "to": "ALCOHOL", "value": 181}, {"from": "FROZEN", "length": 500, "to": "BAKERY", "value": 174}, {"from": "FROZEN", "length": 500, "to": "MEAT", "value": 19}, {"from": "FROZEN", "length": 500, "to": "MILK", "value": 85}, {"from": "FROZEN", "length": 500, "to": "SNACKS", "value": 168}, {"from": "FROZEN", "length": 500, "to": "TINNED", "value": 163}, {"from": "FROZEN", "length": 500, "to": "TOILETRY", "value": 50}, {"from": "FROZEN", "length": 500, "to": "VEG", "value": 40}, {"from": "MEAT", "length": 500, "to": "SNACKS", "value": 19}, {"from": "MEAT", "length": 500, "to": "TINNED", "value": 19}, {"from": "MEAT", "length": 500, "to": "TOILETRY", "value": 5}, {"from": "MILK", "length": 500, "to": "BAKERY", "value": 110}, {"from": "MILK", "length": 500, "to": "MEAT", "value": 14}, {"from": "MILK", "length": 500, "to": "SNACKS", "value": 98}, {"from": "MILK", "length": 500, "to": "TINNED", "value": 100}, {"from": "MILK", "length": 500, "to": "TOILETRY", "value": 30}, {"from": "READMADE", "length": 500, "to": "ALCOHOL", "value": 167}, {"from": "READMADE", "length": 500, "to": "BAKERY", "value": 201}, {"from": "READMADE", "length": 500, "to": "FROZEN", "value": 166}, {"from": "READMADE", "length": 500, "to": "MEAT", "value": 21}, {"from": "READMADE", "length": 500, "to": "MILK", "value": 105}, {"from": "READMADE", "length": 500, "to": "SNACKS", "value": 192}, {"from": "READMADE", "length": 500, "to": "TINNED", "value": 170}, {"from": "READMADE", "length": 500, "to": "TOILETRY", "value": 46}, {"from": "READMADE", "length": 500, "to": "VEG", "value": 36}, {"from": "SNACKS", "length": 500, "to": "TINNED", "value": 176}, {"from": "TOILETRY", "length": 500, "to": "SNACKS", "value": 58}, {"from": "TOILETRY", "length": 500, "to": "TINNED", "value": 40}, {"from": "VEG", "length": 500, "to": "BAKERY", "value": 46}, {"from": "VEG", "length": 500, "to": "MEAT", "value": 7}, {"from": "VEG", "length": 500, "to": "MILK", "value": 32}, {"from": "VEG", "length": 500, "to": "SNACKS", "value": 43}, {"from": "VEG", "length": 500, "to": "TINNED", "value": 54}, {"from": "VEG", "length": 500, "to": "TOILETRY", "value": 13}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"font": {"size": 25, "strokeWidth": 4}}, "edges": {"color": {"highlight": "rgb(46,139,87)", "color": "rgba(6,64,201,0.6)", "inherit": false}, "hoverWidth": 2, "scaling": {"max": 7}, "smooth": false}, "physics": {"barnesHut": {"damping": 0.95}, "minVelocity": 0.75}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

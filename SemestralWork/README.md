@@ -27,10 +27,17 @@
 3. Pro apriori - https://www.youtube.com/watch?v=0yaYwDyBxFA
    1. pip install mlxtend
 
-
+1. Grafy - pip install seaborn
+2. pip install pyvis - network grafy
 
 ## Na školním počítači 
 - vytvoř složku v domácím adresáři C:\Users\jmeno.prijmeni\Semestral
 - příkazem "python -m venv env" vytvoř virtuální prostředí
 - Aktivuj pomocí C:\Users\jmeno.prijmeni\Semestral\env\Scripts\activate.bat
 - vypnutí pomocí deactivate
+
+- pip install jupyter
+- pip install pyreadstat
+- pip install mlxtend
+- pip install seaborn
+- pip install pyvis
